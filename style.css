@@ -47,14 +47,8 @@ h4{
   cursor: pointer;
 }
 
-.container {
-  min-height: 400px;
-}
-
 #openButton{
-  position: absolute;
-  right: 8%;
-  bottom: 0;
+  float: right;
   border-radius: 7px;
   padding: 7px 26px;
   background-color: inherit;
@@ -106,9 +100,5 @@ h4{
   }
   .header div{
     width: 22vw;
-  }
-  #openButton{
-    bottom: unset;
-    top: 65%;
   }
 }
