@@ -38,7 +38,7 @@ function check(id){
     console.log('draw')
   }
   else if(id === "paper" && ComChoice === "rock" || id === "rock" && ComChoice === "scissors" || id === "scissors" && ComChoice === "paper"){
-    document.getElementById("score").textContent = UserPoints++;
+    document.getElementById("score").textContent = ++UserPoints;
     win.textContent;win.textContent = "Genius, You Won"
     console.log('You won!')
   }
