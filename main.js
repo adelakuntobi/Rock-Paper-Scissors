@@ -16,6 +16,12 @@ var paper = document.getElementById('paper'),
 var choices = ["paper", "rock", "scissors"];
 var UserPoints = 0;
 
+buttons = document.querySelectorAll(".container img");
+buttons.forEach(button => {
+  button.addEventListener("click",function(){
+    document.getElementById("text").style.display = "none"
+  })
+})
 
 
 rock.addEventListener("click",function () {
