@@ -23,7 +23,6 @@ buttons.forEach(button => {
   })
 })
 
-
 Rock.addEventListener("click",function () {
   check("Rock");
 })
@@ -43,13 +42,13 @@ function check(id){
     win.textContent = "Its a draw!"
     console.log('draw')
   }
-  else if(id === "paper" && ComChoice === "rock" || id === "rock" && ComChoice === "scissors" || id === "scissors" && ComChoice === "paper"){
+  else if(id === "Paper" && ComChoice === "Rock" || id === "Rock" && ComChoice === "Scissors" || id === "Scissors" && ComChoice === "Paper"){
     document.getElementById("score").textContent = ++UserPoints;
-    win.textContent;win.textContent = "Genius, You Won"
+    win.textContent = "Genius, You Won";
     console.log('You won!')
   }
   else{
-    win.textContent = "You could try again!"
+    win.textContent = "You Lost. You could try again!"
     console.log('Loser')
   }
 }
