@@ -5,15 +5,15 @@ var modal = document.getElementById("myModal");
 var openButton = document.getElementById("openButton");
 var closeBtn = document.getElementById("closeBtn");
 
-var paper = document.getElementById('paper'),
- scissors = document.getElementById('scissors'),
- rock = document.getElementById('rock'),
+var Paper = document.getElementById('paper'),
+ Scissors = document.getElementById('scissors'),
+ Rock = document.getElementById('rock'),
 
  win = document.getElementById('win'),
  choose = document.getElementById('choose'); 
 
 
-var choices = ["paper", "rock", "scissors"];
+var choices = ["Paper", "Rock", "Scissors"];
 var UserPoints = 0;
 
 buttons = document.querySelectorAll(".container img");
@@ -24,14 +24,14 @@ buttons.forEach(button => {
 })
 
 
-rock.addEventListener("click",function () {
-  check("rock");
+Rock.addEventListener("click",function () {
+  check("Rock");
 })
-paper.addEventListener("click",function () {
-  check("paper");
+Paper.addEventListener("click",function () {
+  check("Paper");
 })
-scissors.addEventListener("click",function () {
-  check("scissors");
+Scissors.addEventListener("click",function () {
+  check("Scissors");
 })
 
 var id
